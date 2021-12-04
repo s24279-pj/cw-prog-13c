@@ -24,10 +24,8 @@ int main()
     }
     for (int i=0; i<13; i++)
     {
-    if (i=5)
-        cout <<IN[i];
-    else
-       IN[i]+=key;
+
+        IN[i]+=key;
         if ((unsigned char) IN[i] > 'Z') IN[i] -= zakres;
         if ((unsigned char) IN[i] < 'A') IN[i] += zakres;
         cout << IN[i];
