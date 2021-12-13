@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1639161860 source:/home/ubuntu/Desktop/CodeBlocks/Nauka/cwiczenia-programowanie/cwiczenia5/zadanie4/main.cpp
+	<iostream>
+	<math.h>
+
