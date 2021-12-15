@@ -31,7 +31,7 @@ int skalarny(int n, int X[], int Y[])
     {
         iloczyn+=X[i]*Y[i];
     }
-    std::cout << iloczyn;
+    return iloczyn;
 }
 
 int main()
@@ -54,7 +54,7 @@ int main()
     show(q,B);
     std::cout << endl;
     std::cout << "A iloczyn skalarny to: ";
-    skalarny(q,A,B);
+    std::cout << skalarny(q,A,B);
 
     return 0;
 }
