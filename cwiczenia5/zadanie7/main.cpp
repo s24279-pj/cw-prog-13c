@@ -7,9 +7,9 @@ void look(int n, int tab[10][10])
 {
     int mx = 0;
     // szukanie max wartosci
-    for (int i=0; i<10; i++)
+    for (int i=0; i<n; i++)
     {
-        for (int j=0; j<10; j++)
+        for (int j=0; j<n; j++)
         {
             if(tab[i][j] > mx)
                 mx = tab[i][j];
@@ -19,9 +19,9 @@ void look(int n, int tab[10][10])
     cout << "Maksymalna wartosc w tablicy to: " << mx << endl;
     cout << "Polozenie maksymalnych wartosci to {w,k}: " << endl;
 
-    for (int i=0; i<10; i++)
+    for (int i=0; i<n; i++)
     {
-        for (int j=0; j<10; j++)
+        for (int j=0; j<n; j++)
         {
             if(tab[i][j] == mx)
              cout << "{" << i+1 << "," << j+1 << "}" << endl;
@@ -32,9 +32,9 @@ void look(int n, int tab[10][10])
 int przekatna(int n, int tab[10][10])
 {
     int suma=0;
-    for (int i=0; i<10;i++)
+    for (int i=0; i<n;i++)
     {
-        for (int j=0; j<10; j++)
+        for (int j=0; j<n; j++)
         if (i==j)
         {
             suma+=tab[i][j];
@@ -43,19 +43,19 @@ int przekatna(int n, int tab[10][10])
     cout << "Suma przekatnej to: " << suma << endl;
 }
 
-void trans(int k, int p, int tab[10][10])
+void trans(int n, int k, int p, int tab[10][10])
 {
     //zamiana
-    for (int i=0; i<10; i++)
+    for (int i=0; i<n; i++)
     {
        std::swap(tab[k-1][i],tab[p-1][i]);
     }
     //wyswietlenie po zamianie
     std::cout << "Twoja tablica po zamianie.." << endl;
-        for (int i=0; i<10; i++)
+    for (int i=0; i<n; i++)
     {
 
-        for (int j=0; j<10; j++)
+        for (int j=0; j<n; j++)
             {
                 std::cout << tab[i][j] << " ";
             }
@@ -93,7 +93,7 @@ int main()
     std::cout << "Podaj nr wiersza z ktorym ma nastapic zamiana: ";
     std::cin >> p;
     std::cout << endl;
-    trans(k,p,tab);
+    trans(n,k,p,tab);
 
 
     return 0;
