@@ -12,16 +12,19 @@ int main()
     do
         {
         cin >> x;
+        if (x==0)
+        break;
+        else
         A.push_back(x);
         }while(x!=0);
 
     for (int i=0; i<=A.size(); i++)
     {
-        for (int i=0; i<5; i++)
+       if (i%5 == 0)
         {
-        cout << A[i] << " ";
+            cout << endl;
         }
-        cout << endl;
+            cout << A[i] << " ";
     }
     return 0;
 }
