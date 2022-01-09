@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1641768725 source:/home/ubuntu/Desktop/CodeBlocks/Nauka/cwiczenia-programowanie/Projekt/Projekt-Kolko-i-Krzyzyk/main.cpp
+	<iostream>
+	<unistd.h>
+	<ctime>
+
