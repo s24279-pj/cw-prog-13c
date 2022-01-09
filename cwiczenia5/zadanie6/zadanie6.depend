@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1639602811 source:/home/ubuntu/Desktop/CodeBlocks/Nauka/cwiczenia-programowanie/cwiczenia5/zadanie6/main.cpp
+	<iostream>
+	<ctime>
+	<vector>
+	<cstdlib>
+
